@@ -42,7 +42,9 @@ reviews of each length. Discuss your findings based on the plot.
 Randomly sample 5 reviews (including both short reviews and long reviews) and verify whether the
 sentence segmentation function/tool detects the sentence boundaries correctly. Discuss your results.
 
+![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Sentences_in_review.png "Sentences")
 
+![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Tokens_in_review.png "Tokens")
 
 ---
 **Tokenization and Stemming.** Tokenize the reviews and show two distributions of the data, one without
