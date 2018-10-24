@@ -23,15 +23,15 @@ Source code in `lda-analysis.py`. I used sklearn's implementation for LDA.
 Topics modelled using sklearn LDA -
 ```
 Topic 0:
-charger charge battery usb works cable
+phone sound bluetooth speaker use good
 Topic 1:
-case phone screen iphone great like
+case phone screen like protector iphone
 Topic 2:
-headset ear sound bluetooth quality good
+great product phone price good just
 Topic 3:
-just phone don like use product
+phone 34 use just like don
 Topic 4:
-phone battery use phones device life
+battery charge charger charging usb power
 ```
 
 Topic 3 does not seem to be a promising topic. I removed this
