@@ -1,33 +1,24 @@
-# Aspect Extraction on Amazon Phone Product Reviews
+## Aspect Extraction using Topic Modelling on Amazon Phone Product Reviews
 
 ### Method
-I used a Latent Dirichlet Allocation (LDA), a state-of-the-art 
-probabilistic approach for topic modelling to do aspect extraction
-on phone product reviews.
+I used Latent Dirichlet Allocation (LDA), a probabilistic approach for topic modelling to do aspect extraction
+on phone product reviews. To know about details of LDA,
+please refer to [this page](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation).
 
-File `nmf-test.py` uses sklearn's implementation for both.
-I see that the runtime is faster, and NMF gives more pleasing topic models.
-But there is no way for visualization.
+The steps for aspect extraction are as follow:
+1. Extract term frequency from given data
+2. Construct the LDA model and train it.
+3. Extract 5 topics from the dataset with 6 top words each.
+4. Assign a topic for each review.
+5. Evaluate the assignment by randomly sample 20 reviews from the dataset
+    and manually annotate their topics. 
+6. With the ground truth, calculate precision, recall and F1 score.
+6. Find the average rating for each topic.
 
-On the other hand `topic_analysis.py` runs LDA using gensim.
-It's much more slower and the topics don't look good.
-The only good thing is it shows a great visualization.
+Source code in `lda-analysis.py`. I used sklearn's implementation for LDA.
 
-Results: (ran on first 20k examples)
 
-Topics modelled using sklearn NMF -
-```
-Topic 0:
-charger works great car usb cable -> charger
-Topic 1:
-case iphone phone cases protection fit -> phone cases
-Topic 2:
-headset ear sound bluetooth quality good -> headphones
-Topic 3:
-screen protector protectors bubbles product iphone -> screen protectors
-Topic 4:
-phone battery charge use cell new -> battery charge
-```
+### Result
 
 Topics modelled using sklearn LDA -
 ```
@@ -43,19 +34,46 @@ Topic 4:
 phone battery use phones device life
 ```
 
-Topics modelled using gensim LDA:   
-```
-(0, '0.026*"headset" + 0.019*"sound" + 0.017*"bluetooth" + 0.015*"phone" + 0.013*"quality" + 0.009*"button"')
-(1, '0.031*"phone" + 0.021*"screen" + 0.016*"great" + 0.015*"iphone" + 0.014*"product" + 0.013*"would"')
-(2, '0.043*"phone" + 0.033*"charge" + 0.024*"battery" + 0.019*"charger" + 0.012*"cable" + 0.009*"iphone"')
-```
+Topic 3 does not seem to be a promising topic. I removed this
+topic, and for the reviews assigned to this topic I assigned a new
+topic of the *second highest probability*.
 
-Visualization:
-![](t1.PNG)
+With the final 4 topics, below shows the number of reviews and average ratings
+on each phone aspect:
 
-Planning for next steps:
-- [ ] Run on the full dataset
-- [ ] Choose the best topic model (currently is NMF, the topics are distinctive enough).
-- [ ] Run topic modelling on each document and do F1 scoring.
-- [ ] Run polarity check on each review based on its topic, and do an overall analysis.
-      By this we can inspect how well Amazon's cell phone products do in each topic aspect.
+![](Number%20of%20Reviews%20&%20Average%20Ratings%20on%20Phone%20Aspects.png)
+
+Overall, each of the aspect performed well. The ratings are all higher than 4.
+
+The best performing aspect is battery and charging. The lowest is about the 
+quality of the phone and its price. The most received reviews are about phone
+cases and screen protectors.
+
+### Evaluation
+
+Confusion Matrix:
+
+|     | Actual_0  | Actual_1 | Actual_2 | Actual_3 | Total |
+|---  | :---------: | :---------:|:---------:| :---------: | :---------: |
+| P_0 |3|0|1|0|4|
+| P_1 |0|6|0|0|6|
+| P_2 |0|3|2|1|6|
+| P_4 |0|0|0|4|4|
+|Total|3|9|3|5
+
+Evaluation metrics:
+
+| Topic | Precision  | Recall | F1 |
+| :---------: | :---------: | :---------: | :---------:|
+|0|0.75|1|0.857|
+|1|1|0.66|0.8|
+|2|0.33|0.66|0.44|
+|4|1|0.8|0.88|
+
+Obviously topic 2 yields a significantly lower F1 score. Reason is that topic
+2 is itself somehow vague and any review could have contain the word "great",
+"phone" and "price". So it is not a good topic to be used.
+
+### References
+1. https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
+2. http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html
