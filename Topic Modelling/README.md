@@ -1,8 +1,9 @@
-## Topic Modelling on Amazon Cell Phone reviews
+# Aspect Extraction on Amazon Phone Product Reviews
 
-Now I am using 2 types of models for topic modelling:
-- Latent Dirichlet Allocation (LDA)
-- Non-negative Matrix Factorization (NMF)
+### Method
+I used a Latent Dirichlet Allocation (LDA), a state-of-the-art 
+probabilistic approach for topic modelling to do aspect extraction
+on phone product reviews.
 
 File `nmf-test.py` uses sklearn's implementation for both.
 I see that the runtime is faster, and NMF gives more pleasing topic models.
@@ -54,6 +55,7 @@ Visualization:
 
 Planning for next steps:
 - [ ] Run on the full dataset
-- [ ] Choose the best topic model (currently is NMF, the topics are distinctive enough)
+- [ ] Choose the best topic model (currently is NMF, the topics are distinctive enough).
+- [ ] Run topic modelling on each document and do F1 scoring.
 - [ ] Run polarity check on each review based on its topic, and do an overall analysis.
       By this we can inspect how well Amazon's cell phone products do in each topic aspect.
