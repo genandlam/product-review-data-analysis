@@ -480,6 +480,7 @@ def ask_for_backtrace(min_arr,max_arr):
 	try:
 		r_word = input('input a word to trace tokens :')
 		
+	return
 	
 def backtrack_stemmed_word(word):
 	for stem in translation_bank:
