@@ -1,6 +1,6 @@
 # Noun Phrases 
 
-Top 20 noun phrases by reviewers:<br />
+##Top 20 noun phrases by reviewers:<br />
 
 'same time', 3635 <br />
 'long time', 2209<br />
@@ -23,12 +23,11 @@ Top 20 noun phrases by reviewers:<br />
 'nice case', 1157<br />
 'other end', 1064
 
-Top 3 most popular products:<br />
-product 1 = B005SUHPO6<br />
+##product 1 = B005SUHPO6<br />
 product 2 = B0042FV2SI<br />
 product 3 = B008OHNZI0<br />
 
-Top 10 noun phrases product 1:<br />
+##Top 10 noun phrases product 1:<br />
 Phrase 			, number of occurance <br />
 'Otterbox Defender', 24<br />
 'hard plastic', 23<br />
@@ -41,7 +40,7 @@ Phrase 			, number of occurance <br />
 'hard case', 12<br />
 'clear plastic', 10<br />
 
-Top 10 noun phrases product 2:<br />
+##Top 10 noun phrases product 2:<br />
 Phrase 		, number of occurance <br />
 'great product', 10<br />
 'other screen', 10<br />
@@ -54,7 +53,7 @@ Phrase 		, number of occurance <br />
 'little bit', 5<br />
 'new phone', 5<br />
 
-Top 10 noun phrases product 3:<br />
+##Top 10 noun phrases product 3:<br />
 Phrase 		, number of occurance <br />
 'great product', 20<br />
 'other screen', 20<br />
