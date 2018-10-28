@@ -1,68 +1,68 @@
 # Noun Phrases 
 
-Top 20 noun phrases by reviewers:
+Top 20 noun phrases by reviewers:<br />
 
-'same time', 3635
-'long time', 2209
-'micro USB', 2088
-'good quality', 2010
-'great product', 1923
-'little bit', 1877
-'great case', 1783
-'first time', 1743
-'great price', 1704
-'high quality', 1663
-'full charge', 1624
-'hard plastic', 1609
-'new phone', 1557
-'external battery', 1346
-'good case', 1324
-'good product', 1307
-'good protection', 1223
-'big deal', 1207
-'nice case', 1157
+'same time', 3635 <br />
+'long time', 2209<br />
+'micro USB', 2088<br />
+'good quality', 2010<br />
+'great product', 1923<br />
+'little bit', 1877<br />
+'great case', 1783<br />
+'first time', 1743<br />
+'great price', 1704<br />
+'high quality', 1663<br />
+'full charge', 1624<br />
+'hard plastic', 1609<br />
+'new phone', 1557<br />
+'external battery', 1346<br />
+'good case', 1324<br />
+'good product', 1307<br />
+'good protection', 1223<br />
+'big deal', 1207<br />
+'nice case', 1157<br />
 'other end', 1064
 
-Top 3 most popular products:
-product 1 = B005SUHPO6
-product 2 = B0042FV2SI
-product 3 = B008OHNZI0
+Top 3 most popular products:<br />
+product 1 = B005SUHPO6<br />
+product 2 = B0042FV2SI<br />
+product 3 = B008OHNZI0<br />
 
-Top 10 noun phrases product 1:
-Phrase 			, number of occurance 
-'Otterbox Defender', 24
-'hard plastic', 23
-'great case', 21
-'great product', 20
-'great protection', 18
-'protective case', 14
-'good case', 12
-'outer rubber', 12
-'hard case', 12
-'clear plastic', 10
+Top 10 noun phrases product 1:<br />
+Phrase 			, number of occurance <br />
+'Otterbox Defender', 24<br />
+'hard plastic', 23<br />
+'great case', 21<br />
+'great product', 20<br />
+'great protection', 18<br />
+'protective case', 14<br />
+'good case', 12<br />
+'outer rubber', 12<br />
+'hard case', 12<br />
+'clear plastic', 10<br />
 
-Top 10 noun phrases product 2:
-Phrase 		, number of occurance 
-'great product', 10
-'other screen', 10
-'great price', 10
-'good screen', 8
-'first time', 7
-'good quality', 7
-'long time', 6
-'big deal', 5
-'little bit', 5
-'new phone', 5
+Top 10 noun phrases product 2:<br />
+Phrase 		, number of occurance <br />
+'great product', 10<br />
+'other screen', 10<br />
+'great price', 10<br />
+'good screen', 8<br />
+'first time', 7<br />
+'good quality', 7<br />
+'long time', 6<br />
+'big deal', 5<br />
+'little bit', 5<br />
+'new phone', 5<br />
 
-Top 10 noun phrases product 3:
-Phrase 		, number of occurance 
-'great product', 20
-'other screen', 20
-'first time', 18
-'great screen', 14
-'high quality', 11
-'good quality', 10
-'good product', 9
-'good screen', 8
-'clear screen', 7
-'long time', 6
+Top 10 noun phrases product 3:<br />
+Phrase 		, number of occurance <br />
+'great product', 20<br />
+'other screen', 20<br />
+'first time', 18<br />
+'great screen', 14<br />
+'high quality', 11<br />
+'good quality', 10<br />
+'good product', 9<br />
+'good screen', 8<br />
+'clear screen', 7<br />
+'long time', 6<br />
