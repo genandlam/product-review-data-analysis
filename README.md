@@ -1,5 +1,16 @@
 # Noun Phrases 
 
+## libraries used 
+nltk, textblob, collections
+
+instructions:<br />
+
+step 1: pip install nltk in terminal <br />
+step 2: pip install textblob in terminal <br />
+step 3: run top_20_noun_phrases.py in terminal <br />
+The output is the following: <br />
+
+
 ## Top 20 noun phrases by reviewers:<br />
 
 'same time', 3635 <br />
@@ -23,6 +34,9 @@
 'nice case', 1157<br />
 'other end', 1064
 
+
+
+step 4: run noun_phrase_product.py in terminal <br />
 ## Products name
 product 1 = B005SUHPO6<br />
 product 2 = B0042FV2SI<br />

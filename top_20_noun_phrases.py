@@ -64,6 +64,7 @@ for np in np_trees:
     
 esBigramFreq = Counter(noun_phrases)
 esBigramFreq.most_common(20)
+print('Top 20 noun phrases by reviewers:')
 print(esBigramFreq.most_common(20))
 
 

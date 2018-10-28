@@ -14,6 +14,10 @@ from collections import Counter
 
 data = [json.loads(line) for line in open('CellPhoneReview.json')]
 
+print ("product 1 = B005SUHPO6")
+print("product 2 = B0042FV2SI")
+print("product 3 = B008OHNZI0")
+
 product_review1=[]
 product_review2=[]
 product_review3=[]
@@ -44,7 +48,7 @@ chunkParser = nltk.RegexpParser(grammar)
 better_tree=[] # PatternTagger 
 products[product_review3,product_review2,product_review1]
 
-for product in products:
+for counter,product in enumerate(products):
 	better_tree=[]
 	for texts in product_review3:
 	    tokens = nltk.word_tokenize(texts)
@@ -73,4 +77,5 @@ for product in products:
 
 	esBigramFreq = Counter(noun_phrases)
 	esBigramFreq.most_common(10)
+	print('Top 10 noun phrases product {}:'.format(counter) )
 	print(esBigramFreq.most_common(10))
