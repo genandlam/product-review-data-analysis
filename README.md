@@ -37,7 +37,7 @@ The output is the following: <br />
 
 
 step 4: run noun_phrase_product.py in terminal <br />
-## Products name
+Products name
 product 1 = B005SUHPO6<br />
 product 2 = B0042FV2SI<br />
 product 3 = B008OHNZI0<br />
