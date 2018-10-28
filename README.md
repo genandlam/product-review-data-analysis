@@ -23,7 +23,8 @@
 'nice case', 1157<br />
 'other end', 1064
 
-## product 1 = B005SUHPO6<br />
+## Products name
+product 1 = B005SUHPO6<br />
 product 2 = B0042FV2SI<br />
 product 3 = B008OHNZI0<br />
 
