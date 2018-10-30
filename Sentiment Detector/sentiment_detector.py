@@ -181,6 +181,19 @@ def filter_tags(sen,tags_to_reject = tags_to_reject,):
 			output.append(tuple[0])
 	return output
 
+def separate_joint_words(sen):
+	separated_sen = []
+	for word in sen:
+		if check_f(word) is True:
+			joint_word = re.sub('[,./]',' ',word)
+			for separated_word in joint_word.split(' '):
+				if separated_word == '' or separated_word == None:
+					continue
+				separated_sen.append(separated_word)
+		elif word == '' or word== None:
+			continue
+		separated_sen.append(word)
+	return separated_sen
 	
 def tokenize_dataset(dataset):
 	global tags_to_reject
@@ -192,12 +205,15 @@ def tokenize_dataset(dataset):
 		for item in items_to_process:
 			if entry[item] != "" or entry[item]  != None:
 				tokenized_sen = tokenizer.tokenize(entry[item])
-				filtered_sen = filter_tags(tokenized_sen,tags_to_reject)
+				separated_sen = separate_joint_words(tokenized_sen)
+				filtered_sen = filter_tags(separated_sen,tags_to_reject)
+
 				
 				for word in filtered_sen:
 					if check(word) is True:
 						continue
 					if check_f(word) is True:
+						passes +=1
 						joint_array.append(word)
 						continue
 
@@ -211,16 +227,55 @@ def tokenize_dataset(dataset):
 		joint_word = re.sub('[,./]',' ',joint_word)
 		for word in joint_word.split(' '):
 			word = word.strip(' ')
-			tuple = pos_tag([word])[0]
-			if (tuple[1].strip(' ')).upper() in tags_to_reject:
-				continue
 			if check(word) is True:
 				continue
 			iter_string = [item,str(rating),word]
 			iter_array.append(iter_string)
 	
 	print("done")
-	return iter_array
+	print('passes: %d'%passes)
+	return iter_array	
+	
+# def tokenize_dataset(dataset):
+	# global tags_to_reject
+	# iter_array = []
+	# joint_array = []
+	
+	# for entry in tqdm(dataset):
+		# rating = entry['overall']
+		# for item in items_to_process:
+			# if entry[item] != "" or entry[item]  != None:
+				# tokenized_sen = tokenizer.tokenize(entry[item])
+				# filtered_sen = filter_tags(tokenized_sen,tags_to_reject)
+				# separated_sen = []
+				
+				# for word in tokenized_sen:
+					# if check(word) is True:
+						# continue
+					# if check_f(word) is True:
+						# joint_array.append(word)
+						# continue
+
+					# iter_string = [item,str(rating),word]
+					# iter_array.append(iter_string)
+	
+	# sys.stdout.write("\rTokenizing joint words... ")
+	# sys.stdout.flush()
+
+	# for joint_word in joint_array:
+		# joint_word = re.sub('[,./]',' ',joint_word)
+		# for word in joint_word.split(' '):
+			# word = word.strip(' ')
+			# tuple = pos_tag([word])[0]
+			# if (tuple[1].strip(' ')).upper() in tags_to_reject:
+				# continue
+			# if check(word) is True:
+				# continue
+			# iter_string = [item,str(rating),word]
+			# iter_array.append(iter_string)
+	
+	# print("done")
+	# return iter_array
 	
 
 def compute_score(word,item_type, rating, count):

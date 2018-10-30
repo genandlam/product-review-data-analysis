@@ -1,5 +1,5 @@
 Top 20 Positive Sentiment Words
-#1 : great    value = 364079
+#1 : great    value = 364040
     great;
     great.;
     ..great;
@@ -8,9 +8,9 @@ Top 20 Positive Sentiment Words
     *great*;
     greatness.;
     great-;
+    -great;
     great*;
     greatful;
-    -great;
     .great;
     greats;
     greate;
@@ -19,11 +19,11 @@ Top 20 Positive Sentiment Words
     ***great***;
     greats.;
     greatly;
-#2 : good    value = 173564
+#2 : good    value = 171847
     good;
     good.;
-    good..;
     -good;
+    good..;
     good-;
     goods.;
     good*;
@@ -37,7 +37,8 @@ Top 20 Positive Sentiment Words
     ..good;
     good==-;
     goodly;
-#3 : love    value = 171405
+    goods;
+#3 : love    value = 171285
     love;
     loving;
     loved;
@@ -65,12 +66,12 @@ Top 20 Positive Sentiment Words
     lovely-;
     l-o-v-e-s;
     *love;
+    -loved;
     loved..;
     loveing;
     ..loves;
     lovee;
-    -loved;
-#4 : use    value = 164791
+#4 : use    value = 164739
     used;
     using;
     use;
@@ -113,10 +114,8 @@ Top 20 Positive Sentiment Words
     uses*;
     *using;
     'use;
-    -use;
-    *use;
     _________________________________________useful;
-#5 : charg    value = 121802
+#5 : charg    value = 123026
     charge;
     charges;
     charging;
@@ -126,20 +125,22 @@ Top 20 Positive Sentiment Words
     charged.;
     charges.;
     charges-;
+    -charges;
     -charge;
+    ______________charging;
     charge..;
     charging-;
+    -charged;
     .-charges;
     charged-;
-    -charges;
     .charge;
     'charging;
     charged..;
     chargeing;
     'charged;
-    -charged;
     .charging;
     charg;
+    -charging;
     .charges;
     chargged;
     charging..;
@@ -149,14 +150,14 @@ Top 20 Positive Sentiment Words
     *charge;
     charge-;
     ***charging;
-    -charging;
     charging*;
     charged~;
     'charge;
     charges..;
     charged*;
+    ~charging;
     charges~;
-#6 : nice    value = 118345
+#6 : nice    value = 118705
     nice;
     nicely.;
     nice.;
@@ -171,7 +172,8 @@ Top 20 Positive Sentiment Words
     nicely;
     nicely*;
     .-nice;
-#7 : easi    value = 84506.5
+    niceness;
+#7 : easi    value = 84906.7
     easy;
     .easy;
     easy.;
@@ -181,7 +183,7 @@ Top 20 Positive Sentiment Words
     easy*;
     easy..;
     easy-;
-#8 : best    value = 83000
+#8 : best    value = 82853.4
     best;
     best.;
     .best;
@@ -193,7 +195,7 @@ Top 20 Positive Sentiment Words
     bested;
     ..best;
     best-;
-#9 : need    value = 73792.1
+#9 : need    value = 74174.1
     needed;
     needed.;
     need;
@@ -202,6 +204,7 @@ Top 20 Positive Sentiment Words
     need.;
     *need*;
     needs.;
+    *need;
     ..needed;
     need..;
     needed-;
@@ -223,8 +226,7 @@ Top 20 Positive Sentiment Words
     needful;
     =needs;
     needing..;
-    *need;
-#10 : perfect    value = 73239
+#10 : perfect    value = 73076
     perfect;
     perfectly.;
     perfect.;
@@ -242,26 +244,26 @@ Top 20 Positive Sentiment Words
     perfectly*;
     //perfect//;
     perfectly..;
+    perfection;
     .perfect;
     perfectly-;
     'perfect;
-    perfection;
     ..perfect;
     *perfectly*;
     .perfect.;
     perfects;
     *perfect;
-#11 : littl    value = 68379.6
+#11 : littl    value = 68379
     little;
     little.;
     *little*;
     little-;
+    -little;
     'little;
     .little;
     littl;
     littleness;
-    -little;
-#12 : look    value = 64621.6
+#12 : look    value = 65356.3
     looks;
     looking;
     look;
@@ -281,13 +283,13 @@ Top 20 Positive Sentiment Words
     lookes;
     .looks;
     -looking;
+    -looks;
     -looked;
     .looked;
     look/;
     ..looked;
     look-;
     'look;
-    -looks;
     looke;
     *looks*;
     'looks;
@@ -296,7 +298,7 @@ Top 20 Positive Sentiment Words
     ..looks;
     .looking;
     looking..;
-#13 : protect    value = 62820.9
+#13 : protect    value = 63209.6
     protects;
     protect;
     protected;
@@ -317,26 +319,28 @@ Top 20 Positive Sentiment Words
     .protect;
     protected*;
     protected-;
+    -protects;
     protections.;
     protected..;
+    -protect;
     'protective;
     protecters.;
     protectives;
     protective-;
     protective..;
+    -protection;
     *protect*;
     .protects;
+    protection';
     protective'.;
     protecters;
     protectes;
     protection~;
     protect-ant;
     protections;
-    -protects;
     protections-;
     protection;
-    -protection;
-#14 : usb    value = 60652.6
+#14 : usb    value = 60949.5
     usb;
     usb.;
     -usb;
@@ -350,10 +354,57 @@ Top 20 Positive Sentiment Words
     usb*;
     usbs.;
     usb~;
-    u.s.b.;
     *usb;
     u_s_b;
-#15 : work    value = 55297.5
+#15 : recommend    value = 55427.3
+    recommend;
+    recommended;
+    recommending;
+    recommended.;
+    recommend.;
+    recommends;
+    recommendation;
+    .recommended;
+    recommendable;
+    recommended..;
+    ..recommend;
+    recommend*;
+    .recommend;
+    recommend..;
+    recommende;
+    recommending.;
+    recommendation.;
+    recommendation-;
+    recommendations.;
+    recommended/;
+    recommendations;
+#16 : excel    value = 54394.5
+    excellent;
+    excellent.;
+    excelent;
+    excell;
+    excels;
+    excellant;
+    .excellent;
+    excel;
+    excells;
+    excellently.;
+    excellent..;
+    -excellent;
+    excelled;
+    excelent.;
+    excellant.;
+    excels.;
+    excel.;
+    excelant;
+    ,excellent;
+    excellent-;
+    excelled.;
+    *excellent;
+    excellence.;
+    excellence;
+    excellently;
+#17 : work    value = 53387.5
     work;
     worked;
     works;
@@ -390,115 +441,69 @@ Top 20 Positive Sentiment Words
     'works;
     work'.;
     work*;
-#16 : recommend    value = 54493.5
-    recommend;
-    recommended;
-    recommending;
-    recommended.;
-    recommend.;
-    recommends;
-    .recommended;
-    recommendable;
-    recommended..;
-    ..recommend;
-    recommend*;
-    .recommend;
-    recommend..;
-    recommende;
-    recommending.;
-    recommendation.;
-    recommendations.;
-    recommended/;
-    recommendation;
-    recommendations;
-    recommendation-;
-#17 : excel    value = 54446.5
-    excellent;
-    excellent.;
-    excelent;
-    excell;
-    excels;
-    excellant;
-    .excellent;
-    excel;
-    excells;
-    excellently.;
-    excellent..;
-    -excellent;
-    excelled;
-    excelent.;
-    excellant.;
-    excels.;
-    excel.;
-    excelant;
-    ,excellent;
-    excellent-;
-    excelled.;
-    *excellent;
-    excellence.;
-    excellence;
-    excellently;
-#18 : make    value = 52560
-    make;
-    makes;
-    making;
-    make.;
-    makes.;
-    making.;
-    .making;
-    *makes;
-    -makes;
-    .make;
-    ..make;
-    .makes;
-    -make;
-    maked;
-    make..;
-#19 : get    value = 44904.6
-    get;
-    gets;
-    getting;
-    get.;
-    getting.;
-    gets.;
-    .getting;
-    get-;
-    .get;
-    get'.;
-    -get;
-    ..get;
-    get..;
-    'getting;
-    gets..;
-    *get;
-    'get;
-#20 : come    value = 42432.6
-    comes;
-    come;
-    coming;
-    coming.;
-    come.;
-    comes.;
-    .comes;
-    -comes;
-    comed;
-    come..;
-    *comes;
-    /coming;
-    .coming;
-    -come;
+#18 : awesom    value = 41684.5
+    awesome;
+    awesome.;
+    awesome-;
+    awesome..;
+    .awesome;
+    awesom..;
+    awesomer.;
+    ***awesome;
+    awesome-er;
+    awesome~;
+    awesomeness;
+    awesome-ly;
+    awesomely.;
+#19 : keep    value = 39884.9
+    keeps;
+    keep;
+    keeping;
+    keep.;
+    keeping.;
+    keeps.;
+    'keep;
+    keeped;
+    .keep;
+    *keeps;
+    ***keep;
+    *keep;
+    -keep;
+    .keeps;
+    ..keeping;
+    -keeps;
+#20 : want    value = 39181.3
+    wants;
+    wanting;
+    want;
+    wanted;
+    wanted.;
+    wanting.;
+    want.;
+    wanting..;
+    /want/;
+    want-;
+    wants.;
+    want*;
+    want..;
+    wanted..;
+    wanted-;
+    wanted/;
+    ***wanted;
+    'want;
+    want's.;
 
 Top 20 Negative Sentiment Words
-#1 : poor    value = -30677.4
+#1 : poor    value = -31183.3
     poor;
     poor.;
+    -poor;
     poorly;
     ..poor;
     poorly.;
     poor-;
     poor..;
-    -poor;
-#2 : return    value = -29200.6
+#2 : return    value = -29984.2
     return;
     return.;
     returned;
@@ -510,11 +515,11 @@ Top 20 Negative Sentiment Words
     .returned;
     returned..;
     returning.;
+    *****returned;
     returnable;
     returned-;
     ..returned;
-    *****returned;
-#3 : disappoint    value = -21428.2
+#3 : disappoint    value = -22437.1
     disappointed;
     disappointing;
     disappoint.;
@@ -527,26 +532,27 @@ Top 20 Negative Sentiment Words
     .disappointed;
     disappointment;
     disappointing*;
+    -disappointed;
     disappointed..;
     disappointing..;
     disappointments.;
     disappointed-;
     disappointing-;
-    -disappointed;
-#4 : broke    value = -20358.2
+#4 : broke    value = -20482.7
     broke;
     broke.;
     broked;
     broke..;
     brokes;
     broke-;
-#5 : cheap    value = -18487
+#5 : cheap    value = -19067.4
     cheap;
     cheap.;
     cheap-;
     cheaping;
     .cheap;
     cheaped;
+    cheapness;
     'cheap'-;
     'cheap;
     cheap..;
@@ -556,25 +562,26 @@ Top 20 Negative Sentiment Words
     =cheap;
     cheapness.;
     cheaps;
-#6 : horribl    value = -18259.4
+    'cheap';
+#6 : horribl    value = -18537
     horrible;
     horrible.;
     horrible-;
     horribly.;
+    -horrible;
     ..horrible;
     horribly;
     .horrible;
-    -horrible;
-#7 : terribl    value = -17982.5
+#7 : terribl    value = -18366.8
     terrible;
     terrible.;
     terribly.;
     -terrible;
     *terrible*;
     terrible..;
-    terribly;
     terrible-;
-#8 : bad    value = -16899.2
+    terribly;
+#8 : bad    value = -18289.8
     bad;
     bad.;
     .bad;
@@ -582,35 +589,35 @@ Top 20 Negative Sentiment Words
     badly.;
     bad-;
     badly..;
+    bads;
     *bad*;
     'bad;
     bad==-;
-    b.a.d.;
     badly;
-#9 : wast    value = -15494.6
+#9 : wast    value = -15643.3
     waste;
     wasted;
     wasting;
+    wasteful;
     waste.;
     wast;
     wastes;
     wasteful.;
-    wasteful;
     wasted.;
     wast.;
-#10 : stop    value = -13173.5
+#10 : stop    value = -13372.2
     stopped;
     stop;
     stops;
+    stopping;
     stop.;
     stopped.;
     stops.;
-    stopping;
+    -stop;
     stopping.;
     'stopped;
     stop..;
-    -stop;
-#11 : pay    value = -10702.7
+#11 : pay    value = -10794
     pay;
     paying;
     pays;
@@ -620,11 +627,11 @@ Top 20 Negative Sentiment Words
     paying.;
     .pay;
     payed.;
-#12 : worst    value = -10260.7
+#12 : worst    value = -10390.2
     worst;
     _worst_;
     worst.;
-#13 : send    value = -8806.15
+#13 : send    value = -8922.71
     send;
     sending;
     sends;
@@ -632,7 +639,7 @@ Top 20 Negative Sentiment Words
     send.;
     .send;
     *sending;
-#14 : defect    value = -8543.9
+#14 : defect    value = -8774.63
     defective;
     defective.;
     defect;
@@ -642,7 +649,7 @@ Top 20 Negative Sentiment Words
     defect.;
     defects;
     'defective;
-#15 : useless    value = -7437.79
+#15 : useless    value = -7904.36
     useless;
     useless.;
     uselessness;
@@ -652,24 +659,24 @@ Top 20 Negative Sentiment Words
     uselessness.;
     uselessly.;
     *useless*.;
-#16 : fell    value = -6334.02
+#16 : fell    value = -6386.65
     fell;
     fell.;
     fells;
     felling;
     felled;
     fells.;
-#17 : sent    value = -5931.52
+#17 : sent    value = -6064.02
     sent;
     sent.;
     .sent;
     ..sent;
-#18 : broken    value = -5589.61
+#18 : broken    value = -5970.47
     broken;
     broken.;
     broken..;
     'broken'.;
-#19 : fail    value = -5372.41
+#19 : fail    value = -5752.77
     failed;
     fails;
     failed.;
@@ -682,7 +689,7 @@ Top 20 Negative Sentiment Words
     fails.;
     =failed;
     failes;
-#20 : wors    value = -4663.21
+#20 : wors    value = -4903.03
     worse;
     worse.;
     worse-;
