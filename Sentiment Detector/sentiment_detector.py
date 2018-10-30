@@ -17,6 +17,7 @@ download('averaged_perceptron_tagger')
 download('stopwords')
 
 #hyper-parameters
+# filename = './data/test.json'
 filename = './data/CellPhoneReview.json'
 token_filename = './data/tokens.json'
 tbank_filename = './data/tbank.json'
@@ -24,9 +25,8 @@ inv_tbank_filename = './data/invbank.json'
 data_filename = './data/data.json'
 results_filename = 'results.txt'
 
-custom_stop_words = set(['i','my','them','the','these','they','he','she','can','could'])
+custom_stop_words = set(['i','my','them','the','these','they','he','she','can','could','make','come','go','take','get'])
 punctuation_inclusions = '+!'
-punctuation_exclusions = '=*~|'
 tags_to_reject = ['NN','NNS','RB','NNP','PRP','CC','CD','DT','PRP$','IN','MD']
 items_to_process = ["reviewText","summary"]
 run_modes = ['full','run','gather']
@@ -56,14 +56,11 @@ def init_parsers():
 	
 def init_pstring():
 	global pstring
-	plist= set([p for p in s.punctuation])
-	p_set = set((plist|set([c for c in punctuation_exclusions]))-set([c for c in punctuation_inclusions]))
-	# for c in punctuation_exclusions:
-		# plist.append(c)
-	# for c in punctuation_inclusions:
-		# plist.remove(c)
-	
-	pstring = ''.join([c for c in p_set])
+	plist= [p for p in s.punctuation]
+	for c in s.punctuation:
+		if c in punctuation_inclusions:
+			plist.remove(c)
+	pstring = ''.join([c for c in plist])
 
 	
 def load_stop_words():
@@ -91,12 +88,11 @@ def load_data_file(filename_ = filename):
 	elif(len(temp_array) == 1):
 		return temp_array[0]
 		
-	json_data.close()
 	return temp_array
 	
 def check_f(word):
 	for char in [',','.','/']:
-		if char in word and char not in word[0] and char not in word[-1]:
+		if char in word.strip(char):
 			return True
 
 	return False
@@ -190,7 +186,7 @@ def tokenize_dataset(dataset):
 	global tags_to_reject
 	iter_array = []
 	joint_array = []
-
+	
 	for entry in tqdm(dataset):
 		rating = entry['overall']
 		for item in items_to_process:
@@ -210,11 +206,14 @@ def tokenize_dataset(dataset):
 	
 	sys.stdout.write("\rTokenizing joint words... ")
 	sys.stdout.flush()
-	
+
 	for joint_word in joint_array:
 		joint_word = re.sub('[,./]',' ',joint_word)
 		for word in joint_word.split(' '):
 			word = word.strip(' ')
+			tuple = pos_tag([word])[0]
+			if (tuple[1].strip(' ')).upper() in tags_to_reject:
+				continue
 			if check(word) is True:
 				continue
 			iter_string = [item,str(rating),word]
@@ -334,8 +333,7 @@ def normalize_rating_weights(array,score_key_name = 'overall'):
 			else:
 				rating_score[rating] = (1-abs(alpha))*weight
 	
-	print('goal_norm_mean: %s'%goal_mean)
-	print('document_norm_mean: %s'%norm_mean)
+	print('goal_norm_mean: %s , document_norm_mean: %s'%(goal_mean,norm_mean))
 	print(rating_score)
 	
 def generate_distribution(array):
@@ -404,8 +402,9 @@ def write_tags_to_disk():
 		for word in accepted_tag_words:
 			n.write('%s,%s\n'%(word[0],word[1]))
 	print('done')
+	
 def check_valid_main_response(ans, responses = run_modes):
-	return ans in responses
+	return ans.lower() in responses
 	
 if __name__ == "__main__":
 	
