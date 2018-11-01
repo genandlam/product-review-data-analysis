@@ -44,8 +44,6 @@ sentence segmentation function/tool detects the sentence boundaries correctly. D
 
 ![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Sentences_in_review.png "Sentences")
 
-![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Tokens_in_review.png "Tokens")
-
 ---
 **Tokenization and Stemming.** Tokenize the reviews and show two distributions of the data, one without
 stemming, and the other with stemming (you may choose the stemming algorithm implemented in any
@@ -58,39 +56,58 @@ and accessories), and the words that you do not expect to be popular in this dat
 that are commonly used but do not carry much semantic meaning such as *a, the, of, and.* You need to list the
 stop words used in your analysis in the appendix of your report.
 
+![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Tokens_in_review.png "Tokens")
+
+
 **Top 10 Most Frequent Words Before Stemming**
 
 |word |count|
 |-----|-----|
-|this | 199452|
-|that | 185927|
-|on : | 171942|
-|phone| 171053|
-|with | 167338|
-|you  | 148106|
-|case | 139889|
-|have | 133843|
-|but  |128003 |
-|not  |121913 |
-|n't | 115789 |
-|was | 111626 |
+|phone | 174345|
+|case | 144658|
+|one | 85413|
+|like | 71795|
+|i | 67298|
+|great | 65970|
+|use | 60771|
+|screen | 59487|
+|good | 57855|
+|it | 57670|
+|battery | 57135|
+|would | 54460|
+|well | 49465|
+|iphone | 47732|
+|get | 46324|
+|charge | 44390|
+|'s | 39445|
+|charger | 38170|
+|really | 37971|
+|product | 37683|
 
 **Top 10 Most Frequent Words After Stemming**
 
 |stem | count |
 |-----|-------|
-|thi  |260135 |
-|that |193936 |
-|phone| 189479|
-|with | 172400|
-|on  |171965 |
-|case |163276|
-|you  |161412|
-|have | 146760|
-|but  |142350|
-|not |134173|
-|use |116695|
-|n't |116213|
+|phone | 189479|
+|case | 163276|
+|use | 116695|
+|charg | 91180|
+|one | 90926|
+|like | 79625|
+|work | 75515|
+|i | 67301|
+|great | 66009|
+|batteri | 65076|
+|get | 61102|
+|screen | 61067|
+|good | 58073|
+|it | 57977|
+|would | 54460|
+|look | 51808|
+|fit | 49914|
+|iphon | 49900|
+|well | 49476|
+|time | 46971|
 
 
 ---
