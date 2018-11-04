@@ -1,5 +1,14 @@
 ## Aspect Extraction using Topic Modelling on Amazon Phone Product Reviews
 
+### Installation
+```
+pip install sklearn
+pip install tqdm
+pip install numpy
+```
+
+Run `lda-analysis.py` for results.
+
 ### Method
 I used Latent Dirichlet Allocation (LDA), a probabilistic approach for topic modelling to do aspect extraction
 on phone product reviews. To know about details of LDA,
