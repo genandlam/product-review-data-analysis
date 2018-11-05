@@ -17,19 +17,6 @@ Create a virtual environment.
 - TYPE pip install numpy
 - TYPE pip install tqdm
 
-Installing nltk resources
-from the same cmd instance
-
-- TYPE py   #'py' or 'python'
-- TYPE import nltk
-- TYPE nltk.download()
-
-from the nltk downloader, install
-1. StopWords Corpus		#under Corpora
-2. Averaged Perceptron Tagger	#under Models
-
--TYPE exit()
-
 II. RUNNING PROGRAM
 -on cmd, activate virtual environment created prior
 -navigate to the folder with sentiment_detector.py
