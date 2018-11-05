@@ -13,28 +13,31 @@ The 4 parts for this project include:
  ==================
 Libraries and installation:
 ```
+cd SourceCode/Dataset Analysis/
 pip install nltk
 pip install pandas
 pip install matplotlib
 ```
 
 Run `python DatasetAnalysis.py` for results.
-Please refer to Dataset Analysis/README.md for sample output.
+Please refer to SouceCode/Dataset Analysis/README.md for sample output.
 
  ======================
 | Noun Phrase Detector |
  ======================
 Libraries and installation:
 ```
+cd SourceCode/Noun Phrase Detector
 pip install nltk
 pip install textblob
 ```
 Run `python top_20_noun_phrases.py` for results.
-Please refer to Noun Phrase Detector/README.md for sample output.
+Please refer to SouceCode/Noun Phrase Detector/README.md for sample output.
 
  ====================
 | Sentiment Detector |
  ====================
+
 I. INSTALLING LIBRARIES
 Create a virtual environment.
 - on cmd, navigate to your desired directory
@@ -64,17 +67,18 @@ II. RUNNING PROGRAM
 - TYPE py sentiment_detector.py
 - TYPE full
 
-Please refer to Sentiment Detector/README.txt for sample output.
+Please refer to SourceCode/Sentiment Detector/README.txt for sample output.
 
  =================
 | Topic Modelling |
  =================
 Libraries and installation:
 ```
+cd SourceCode/Topic Modelling/
 pip install sklearn
 pip install tqdm
 pip install numpy
 ```
 Run `python lda-analysis.py` for results.
-Please refer to Topic Modelling/README.md for sample output.
+Please refer to SourceCode/Topic Modelling/README.md for sample output.
 
