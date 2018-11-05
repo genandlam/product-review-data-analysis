@@ -55,6 +55,9 @@ sentence segmentation function/tool detects the sentence boundaries correctly. D
 
 ![alt text](https://github.com/gudgud96/product-review-data-analysis/blob/dataset-analysis/src/Sentences_in_review.png "Sentences")
 
+The randomly selected 5 samples of the reviews and its sentence segmentation can be found [here] (src/sample_tokenized_sentences.txt)
+The review with the most sentences can be found [here] (src/long_sentence.txt)
+
 ---
 **Tokenization and Stemming.** Tokenize the reviews and show two distributions of the data, one without
 stemming, and the other with stemming (you may choose the stemming algorithm implemented in any
